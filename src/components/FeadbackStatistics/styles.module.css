@@ -1,0 +1,14 @@
+.staticticList {
+  width: 100%;
+  padding: 25px 0;
+  margin: 0;
+
+  background-color: rgba(235, 235, 235, 0.78);
+}
+.staticticItem {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.13;
+  font-weight: 700;
+}
