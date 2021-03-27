@@ -1,0 +1,15 @@
+.button {
+  padding: 10px;
+  border: none;
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.18;
+  background-color: rgba(145, 209, 125, 0.739);
+  border-radius: 8px;
+  transition: transform 250ms linear;
+}
+.button:hover {
+  transform: scale(1.2);
+  background-color: rgba(145, 209, 125, 0.876);
+}
