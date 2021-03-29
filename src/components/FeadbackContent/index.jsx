@@ -1,6 +1,6 @@
 import { Component } from "react";
-import FeadBackButtons from "../FeadbackButtons";
-import FeadbackStatistics from "../FeadbackStatistics";
+import FeadBackButtons from "../FeadbackOptions";
+import FeadbackStatistics from "../Statistics";
 import styles from "./styles.module.css";
 
 class FeadbackContent extends Component {
@@ -32,8 +32,8 @@ class FeadbackContent extends Component {
       <div className={styles.container}>
         <h2 className={styles.title}>Please leave feadback</h2>
         <FeadBackButtons
-          feadbackVariants={this.state}
-          onButtonClick={this.hendlerFeadbackIncrement}
+          options={this.state}
+          onLeaveFeedback={this.hendlerFeadbackIncrement}
         />
         <h2 className={styles.title}>Statistics</h2>
         <FeadbackStatistics statisticsData={this.state} />
