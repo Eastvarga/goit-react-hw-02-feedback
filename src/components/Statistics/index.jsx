@@ -1,4 +1,6 @@
 import { staticticList, staticticItem } from "./styles.module.css";
+import PropTypes from "prop-types";
+
 const Statistics = ({ statisticsData, total, positivePercentage }) => {
   //   console.log(Object.entries(statisticsData));
   return (
@@ -15,6 +17,10 @@ const Statistics = ({ statisticsData, total, positivePercentage }) => {
       </li>
     </ul>
   );
+};
+
+Statistics.propTypes = {
+  statisticsData: PropTypes.objectOf(PropTypes.number).isRequired,
 };
 
 export default Statistics;

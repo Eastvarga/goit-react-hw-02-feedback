@@ -1,5 +1,6 @@
 import { title, container } from "./styles.module.css";
 import { Component } from "react";
+import PropTypes from "prop-types";
 
 class Section extends Component {
   render() {
@@ -11,4 +12,13 @@ class Section extends Component {
     );
   }
 }
+
+Section.defaultProps = {
+  title: "Ops, there must be a title, but it is lost some where",
+};
+
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
 export default Section;
